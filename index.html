@@ -22,13 +22,33 @@
 						<div class="logo">
 							<span class="icon fa-gem"></span>
 						</div>
-						<div class="content">
-							<div class="inner">
-								<h1>上海双木希国际贸易有限公司</h1>
-								<p>一般项目：货物进出口</p>
-								<p>日中貿易・IT支援・Web制作対応。</p>								
-							</div>
-						</div>
+						<div style="text-align:center; margin:20px;">
+  <button onclick="showLang('ja')">日本語</button>
+  <button onclick="showLang('zh')">中文</button>
+</div>
+
+<div id="ja">
+  <h1>TwinHope</h1>
+  <h2>会社紹介</h2>
+  <p>私たちは日本と中国をつなぐビジネス支援を行っています。</p>
+  <p>事業内容：貿易支援、Web制作、マーケティング支援。</p>
+  <p>お問い合わせ：info@example.com</p>
+</div>
+
+<div id="zh" style="display:none;">
+  <h1>TwinHope</h1>
+  <h2>公司介绍</h2>
+  <p>我们致力于连接日本与中国，为客户提供商务支持服务。</p>
+  <p>业务内容：贸易支持、网站制作、市场推广支持。</p>
+  <p>联系方式：info@example.com</p>
+</div>
+
+<script>
+function showLang(lang) {
+  document.getElementById('ja').style.display = lang === 'ja' ? 'block' : 'none';
+  document.getElementById('zh').style.display = lang === 'zh' ? 'block' : 'none';
+}
+</script>
 						<nav>
 							<ul>
 								<li><a href="#intro">Intro</a></li>
